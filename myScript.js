@@ -1,5 +1,5 @@
-function getComputerChoice(){
-    let randNum = Math.floor(Math.random()*3);
+function getRandomChoice(){
+    let randomNumber = Math.floor(Math.random()*3);
     
     switch (randomNumber){
         case 0:
