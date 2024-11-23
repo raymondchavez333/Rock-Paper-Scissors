@@ -27,5 +27,7 @@ function playRound(humanSelection, computerSelection){
             console.log('You lose! Rock beats Scissors');
             computerScore += 1;
         }
+    } else if (computerSelection === 'paper'){
+        
     }
 }
