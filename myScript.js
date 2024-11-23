@@ -17,5 +17,7 @@ let humanScore= 0;
 let computerScore= 0;
 
 function playRound(humanSelection, computerSelection){
-
+    if(computerSelection === humanSelection){
+        console.log("It's a tie!");
+    }
 }
