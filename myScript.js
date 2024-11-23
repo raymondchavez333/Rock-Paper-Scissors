@@ -28,6 +28,14 @@ function playRound(humanSelection, computerSelection){
             computerScore += 1;
         }
     } else if (computerSelection === 'paper'){
+        if (humanSelection === 'rock'){
+            console.log('You lose! Paper beats Rock');
+            computerScore += 1;
+        } else if (humanSelection === 'scissors'){
+            console.log('You won! Scissors beats Paper');
+            humanScore += 1;
+        }
+    } else if (computerSelection === 'scissors'){
         
     }
 }
