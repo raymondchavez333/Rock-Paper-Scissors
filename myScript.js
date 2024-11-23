@@ -10,5 +10,5 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    
+    return prompt('Choose one: rock, paper, scissors.');
 }
