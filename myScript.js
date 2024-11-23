@@ -19,5 +19,10 @@ let computerScore= 0;
 function playRound(humanSelection, computerSelection){
     if(computerSelection === humanSelection){
         console.log("It's a tie!");
+    } else if(computerSelection === 'rock'){
+        if(humanSelection === 'paper'){
+            console.log('You won! Paper beats Rock');
+            humanScore +=1;
+        }
     }
 }
