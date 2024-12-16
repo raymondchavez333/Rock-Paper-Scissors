@@ -1,16 +1,19 @@
 function getComputerChoice(){
     let random= Math.floor(Math.random()*3);
-
+   
     let computerChoice= '';
-    if (getComputerChoice()=== 0){
+
+    if (random === 0){
         computerChoice= "rock";
-    }else if (getComputerChoice()===1){
+    }else if (random===1){
         computerChoice= "paper";
     }else{
         computerChoice= "scissors";
     }
 
+    return computerChoice;
 }
+console.log(getComputerChoice());
 
 
 function getHumanChoice(){
