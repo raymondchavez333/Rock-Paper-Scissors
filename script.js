@@ -1,3 +1,7 @@
+let humanScore= 0;
+let computerScore= 0;
+
+
 function getComputerChoice(){
     let random= Math.floor(Math.random()*3);
    
@@ -33,7 +37,19 @@ function getHumanChoice(){
     return HumanChoice;
 }
 
-console.log(getHumanChoice());
+function playRound(HumanChoice,computerChoice){
+    if(HumanChoice === "rock" && computerChoice === "paper"){
+        console.log("You Lose! Paper beats Rock.");
+        humanScore = humanScore + 1;
+    }else if(HumanChoice === "paper" && computerChoice === "rock"){
+        console.log("You Lose! ")
+    }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
 
 
 
