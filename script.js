@@ -13,7 +13,7 @@ function getComputerChoice(){
 
     return computerChoice;
 }
-console.log(getComputerChoice());
+
 
 
 function getHumanChoice(){
@@ -27,7 +27,11 @@ function getHumanChoice(){
     }else {
         HumanChoice= "scissors";
     }
+
+    return HumanChoice;
 }
+
+console.log(getHumanChoice());
 
 
 
