@@ -24,8 +24,10 @@ function getHumanChoice(){
         HumanChoice= "rock";
     }else if(askHuman.toLowerCase()=== "paper"){
         HumanChoice= "paper";
-    }else {
+    }else if (askHuman.toLowerCase()=== "scissors"){
         HumanChoice= "scissors";
+    }else{
+        alert("Please enter only either rock, paper or scissors.");
     }
 
     return HumanChoice;
