@@ -40,7 +40,7 @@ function getHumanChoice(){
 function playRound(HumanChoice,computerChoice){
     if(HumanChoice === "rock" && computerChoice === "paper"){
         console.log("You Lose! Paper beats Rock.");
-        humanScore = humanScore + 1;
+        computerScore = computerScore + 1;
     }else if(HumanChoice === "paper" && computerChoice === "rock"){
         console.log("You Lose! ")
     }
