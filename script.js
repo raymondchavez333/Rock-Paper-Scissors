@@ -34,10 +34,11 @@ function getHumanChoice(){
 }
 
 
+
 function playGame(){
     let humanScore= 0;
     let computerScore= 0;
-
+    
 
     function playRound(HumanChoice,computerChoice){
         if(HumanChoice === "rock" && computerChoice === "paper"){
@@ -65,14 +66,21 @@ function playGame(){
             console.log("You Lose! Rock beats scissors");
             computerScore= computerScore + 1;
         }
-    
+        
         return 1;
     }
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
 
-    playRound(humanSelection, computerSelection);
+    let round1= playRound();
+    console.log("Round "+ round1);
     
+
+    function perRound(round){
+        return round + 1;
+    }
+
+    perRound(round1);
     
 }
 
