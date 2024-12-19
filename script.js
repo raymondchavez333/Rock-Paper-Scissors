@@ -66,13 +66,14 @@ function playGame(){
             console.log("You Lose! Rock beats scissors");
             computerScore= computerScore + 1;
         }
-        
-        
+        return playGame();
+    
     }
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
 
-    playRound();
+    playRound(humanSelection,computerSelection);
+    
     
     
 }
