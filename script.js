@@ -67,20 +67,13 @@ function playGame(){
             computerScore= computerScore + 1;
         }
         
-        return 1;
+        return playGame();
     }
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
 
-    let round1= playRound();
-    console.log("Round "+ round1);
+    playRound();
     
-
-    function perRound(round){
-        return round + 1;
-    }
-
-    perRound(round1);
     
 }
 
