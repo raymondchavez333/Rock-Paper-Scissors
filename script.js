@@ -35,6 +35,7 @@ function getHumanChoice(){
 
 
 
+
 function playGame(){
     let humanScore= 0;
     let computerScore= 0;
@@ -81,12 +82,24 @@ function playGame(){
     }
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
-
     playRound(humanSelection,computerSelection);
-    playRound(humanSelection,computerSelection);
+    
+    const humanSelection2 = getHumanChoice();
+    const computerSelection2 = getComputerChoice();
+    playRound(humanSelection2,computerSelection2);
 
-    
-    
+    const humanSelection3 = getHumanChoice();
+    const computerSelection3 = getComputerChoice();
+    playRound(humanSelection3,computerSelection3);
+
+    const humanSelection4 = getHumanChoice();
+    const computerSelection4 = getComputerChoice();
+    playRound(humanSelection4,computerSelection4);
+
+    const humanSelection5 = getHumanChoice();
+    const computerSelection5 = getComputerChoice();
+    playRound(humanSelection5,computerSelection5);
+
 }
 
 playGame();
